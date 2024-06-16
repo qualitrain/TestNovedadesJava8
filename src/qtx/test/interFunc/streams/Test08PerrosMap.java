@@ -52,14 +52,14 @@ public class Test08PerrosMap {
 		
 		perros.add(new Perro("Tyson","Boxer", 11, 28.3F ));
 		perros.add(new Perro("Midas","Boxer", 10, 26.0F ));
-		perros.add(new Perro("Campeón","Boxer", 10, 25.5F ));
+		perros.add(new Perro("Campeon","Boxer", 10, 25.5F ));
 		
-		perros.add(new Perro("Zapato","Pastor Inglés", 12, 50.7F ));
-		perros.add(new Perro("Killer","Pastor Inglés", 6, 45.5F ));
-		perros.add(new Perro("Morris","Pastor Inglés", 3, 48.2F ));
+		perros.add(new Perro("Zapato","Pastor Inglï¿½s", 12, 50.7F ));
+		perros.add(new Perro("Killer","Pastor Inglï¿½s", 6, 45.5F ));
+		perros.add(new Perro("Morris","Pastor Inglï¿½s", 3, 48.2F ));
 		
-		perros.add(new Perro("Motita","Dálmata", 2, 38.1F ));
-		perros.add(new Perro("Hans","Pastor Alemán", 6, 41.5F ));
+		perros.add(new Perro("Motita","Dï¿½lmata", 2, 38.1F ));
+		perros.add(new Perro("Hans","Pastor Alemï¿½n", 6, 41.5F ));
 		perros.add(new Perro("Quesito","Chihuahua", 4, 1.3F ));
 		return perros;
 	}

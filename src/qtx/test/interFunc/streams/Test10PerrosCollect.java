@@ -17,7 +17,7 @@ public class Test10PerrosCollect {
 	}
 	private static void testCollect() {
 		System.out.println("===================================================================");
-		System.out.println("                         Ejemplo recolección");
+		System.out.println("                         Ejemplo recoleccion");
 		System.out.println("===================================================================");
 		List<Perro> perros = getListaPerros();
 		
@@ -34,7 +34,7 @@ public class Test10PerrosCollect {
 	}
 	private static void testCollect02() {
 		System.out.println("===================================================================");
-		System.out.println("         Ejemplo recolección 2: ¿Qué pasa en el interior?");
+		System.out.println("         Ejemplo recolecciï¿½n 2: ï¿½Quï¿½ pasa en el interior?");
 		System.out.println("===================================================================");
 		
 		List<Perro> perros = getListaPerros();
@@ -62,7 +62,7 @@ public class Test10PerrosCollect {
 	}
 	private static void testCollect03() {
 		System.out.println("===================================================================");
-		System.out.println("         Ejemplo recolección 3: ¿<se requiere el combinador?");
+		System.out.println("         Ejemplo recoleccion 3: ï¿½<se requiere el combinador?");
 		System.out.println("===================================================================");
 		
 		List<Perro> perros = getListaPerros();
@@ -79,7 +79,7 @@ public class Test10PerrosCollect {
 	            			 lista.add(raza);
 	            			 System.out.println("lista:"+lista);
 	            		 },
-	            		 (lista1,lista2) -> { //Se invoca en alto volúmen de datos ??
+	            		 (lista1,lista2) -> { //Se invoca en alto volumen de datos ??
 //	            			                 lista1.addAll(lista2);
 	            		                     System.out.println("lista1:"+lista1);
 	            		                     System.out.println("lista2:"+lista2);
@@ -89,7 +89,7 @@ public class Test10PerrosCollect {
 
 	private static void testCollect04() {
 		System.out.println("===================================================================");
-		System.out.println("         Ejemplo recolección 4: con Mapas"                          );
+		System.out.println("         Ejemplo recoleccion 4: con Mapas"                          );
 		System.out.println("===================================================================");
 		
 		List<Perro> perros = getListaPerros();
@@ -125,14 +125,14 @@ public class Test10PerrosCollect {
 		
 		perros.add(new Perro("Tyson","Boxer", 11, 28.3F ));
 		perros.add(new Perro("Midas","Boxer", 10, 26.0F ));
-		perros.add(new Perro("Campeón","Boxer", 10, 25.5F ));
+		perros.add(new Perro("Campeï¿½n","Boxer", 10, 25.5F ));
 		
-		perros.add(new Perro("Zapato","Pastor Inglés", 12, 50.7F ));
-		perros.add(new Perro("Killer","Pastor Inglés", 6, 45.5F ));
-		perros.add(new Perro("Morris","Pastor Inglés", 3, 48.2F ));
+		perros.add(new Perro("Zapato","Pastor Inglï¿½s", 12, 50.7F ));
+		perros.add(new Perro("Killer","Pastor Inglï¿½s", 6, 45.5F ));
+		perros.add(new Perro("Morris","Pastor Inglï¿½s", 3, 48.2F ));
 		
-		perros.add(new Perro("Motita","Dálmata", 2, 38.1F ));
-		perros.add(new Perro("Hans","Pastor Alemán", 6, 41.5F ));
+		perros.add(new Perro("Motita","Dï¿½lmata", 2, 38.1F ));
+		perros.add(new Perro("Hans","Pastor Alemï¿½n", 6, 41.5F ));
 		perros.add(new Perro("Quesito","Chihuahua", 4, 1.3F ));
 		return perros;
 	}

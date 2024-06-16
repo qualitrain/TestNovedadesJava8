@@ -13,19 +13,29 @@ public class Test04PerrosRemoveIf {
 		perros.forEach(p -> System.out.print(p.getNombre() + "(" + p.getEdad() + "), " ) );
 		System.out.println();
 	
+		System.out.println("\nBorrando perros de mÃ¡s de 5 aÃ±os, usando removeIf(predicado)");
 		Predicate<Perro> predicado = perris -> perris.getEdad() > 5;
-		// método de la interfaz funcional Predicate<T>: boolean test(T t)
+		// metodo de la interfaz funcional Predicate<T>: boolean test(T t)
 		perros.removeIf(predicado);
-		System.out.println("Perros de 5 o menos años:");
+		System.out.println("Perros de 5 o menos aÃ±os:");
 		perros.forEach(p -> System.out.print(p.getNombre() + "(" + p.getEdad() + "), " ) );
 		System.out.println();
 		
 		perros = getListaPerros();
+		System.out.println("\nBorrando perros de mÃ¡s de 8 aÃ±os, usando removeIf(predicado)");
 		perros.removeIf(p -> p.getEdad() > 8);
-		System.out.println("Perros de 8 o menos años:");
+		System.out.println("Perros de 8 o menos aÃ±os:");
 		perros.forEach(p -> System.out.print(p.getNombre() + "(" + p.getEdad() + "), " ) );
 		System.out.println();
-
+		
+		System.out.println("\nRemplazando todos los perros");
+		perros.replaceAll(p->{ 
+			p.setEdad( p.getEdad() * 12 ); 
+			return p;
+			});
+		System.out.println("Perros con su edad en meses");
+		perros.forEach(p -> System.out.print(p.getNombre() + "(" + p.getEdad() + "), " ) );
+		
 	}
 
 	private static List<Perro> getListaPerros() {
@@ -37,14 +47,14 @@ public class Test04PerrosRemoveIf {
 		
 		perros.add(new Perro("Tyson","Boxer", 11, 28.3F ));
 		perros.add(new Perro("Midas","Boxer", 10, 26.0F ));
-		perros.add(new Perro("Campeón","Boxer", 10, 25.5F ));
+		perros.add(new Perro("Campeï¿½n","Boxer", 10, 25.5F ));
 		
-		perros.add(new Perro("Zapato","Pastor Inglés", 12, 50.7F ));
-		perros.add(new Perro("Killer","Pastor Inglés", 6, 45.5F ));
-		perros.add(new Perro("Morris","Pastor Inglés", 3, 48.2F ));
+		perros.add(new Perro("Zapato","Pastor Inglï¿½s", 12, 50.7F ));
+		perros.add(new Perro("Killer","Pastor Inglï¿½s", 6, 45.5F ));
+		perros.add(new Perro("Morris","Pastor Inglï¿½s", 3, 48.2F ));
 		
-		perros.add(new Perro("Motita","Dálmata", 2, 38.1F ));
-		perros.add(new Perro("Hans","Pastor Alemán", 6, 41.5F ));
+		perros.add(new Perro("Motita","Dï¿½lmata", 2, 38.1F ));
+		perros.add(new Perro("Hans","Pastor Alemï¿½n", 6, 41.5F ));
 		perros.add(new Perro("Quesito","Chihuahua", 4, 1.3F ));
 		return perros;
 	}

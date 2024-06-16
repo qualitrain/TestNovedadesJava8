@@ -20,7 +20,7 @@ public class Test11PerrosCollect {
 	}
 	private static void testCollect05_toList() {
 		System.out.println("===================================================================");
-		System.out.println("  Ejemplo recolección 5: uso de Collectors para generar una lista"                          );
+		System.out.println("  Ejemplo recoleccion 5: uso de Collectors para generar una lista"                          );
 		System.out.println("===================================================================");
 		
 		List<Perro> perros = getListaPerros();
@@ -33,14 +33,14 @@ public class Test11PerrosCollect {
 
 	private static void testCollect06_toTreeSet() {
 		System.out.println("=====================================================================");
-		System.out.println("Ejemplo recolección 6: uso de Collectors para generar un Set ordenado"                          );
+		System.out.println("Ejemplo recoleccion 6: uso de Collectors para generar un Set ordenado"                          );
 		System.out.println("=====================================================================");
 		
 		List<Perro> perros = getListaPerros();
 		Set<String> nombres = perros.stream()
 				                     .map(Perro::getNombre)
 				                     .collect(Collectors.toCollection(TreeSet::new));
-		System.out.println("Set de nombres de los perros (ordenados alfabéticamente):");
+		System.out.println("Set de nombres de los perros (ordenados alfabeticamente):");
 		System.out.println(nombres);
 		
 		nombres = perros.stream()
@@ -48,13 +48,13 @@ public class Test11PerrosCollect {
                 .collect(Collectors.toCollection( 
                 		()->new TreeSet<String>( (n,n2)->n.length() < n2.length() ? -1 : 1) )
                 		                        );
-		System.out.println("Set de nombres de los perros (ordenados por tamaño del nombre):");
+		System.out.println("Set de nombres de los perros (ordenados por tamaï¿½o del nombre):");
 		System.out.println(nombres);
 	}
 
 	private static void testCollect07_join() {
 		System.out.println("=======================================================================");
-		System.out.println("Ejm. recolección 7:Collectors para generar una concatenación de Strings"                          );
+		System.out.println("Ejm. recoleccion 7:Collectors para generar una concatenacion de Strings"                          );
 		System.out.println("=======================================================================");
 		
 		List<Perro> perros = getListaPerros();
@@ -67,7 +67,7 @@ public class Test11PerrosCollect {
 
 	private static void testCollect08_sum() {
 		System.out.println("=====================================================================");
-		System.out.println("        Ejm. recolección 8:Collectors para sumas agregadas"           );
+		System.out.println("        Ejm. recoleccion 8:Collectors para sumas agregadas"           );
 		System.out.println("=====================================================================");
 		
 		List<Perro> perros = getListaPerros();
@@ -83,7 +83,7 @@ public class Test11PerrosCollect {
 	
 	private static void testCollect09_groupBy() {
 		System.out.println("=====================================================================");
-		System.out.println("      Ejm. recolección 9:Collectors para agrupación de datos"         );
+		System.out.println("      Ejm. recoleccion 9:Collectors para agrupaciï¿½n de datos"         );
 		System.out.println("=====================================================================");
 		
 		List<Perro> perros = getListaPerros();
@@ -115,14 +115,14 @@ public class Test11PerrosCollect {
 		
 		perros.add(new Perro("Tyson","Boxer", 11, 28.3F ));
 		perros.add(new Perro("Midas","Boxer", 10, 26.0F ));
-		perros.add(new Perro("Campeón","Boxer", 10, 25.5F ));
+		perros.add(new Perro("Campeï¿½n","Boxer", 10, 25.5F ));
 		
-		perros.add(new Perro("Zapato","Pastor Inglés", 12, 50.7F ));
-		perros.add(new Perro("Killer","Pastor Inglés", 6, 45.5F ));
-		perros.add(new Perro("Morris","Pastor Inglés", 3, 48.2F ));
+		perros.add(new Perro("Zapato","Pastor Inglï¿½s", 12, 50.7F ));
+		perros.add(new Perro("Killer","Pastor Inglï¿½s", 6, 45.5F ));
+		perros.add(new Perro("Morris","Pastor Inglï¿½s", 3, 48.2F ));
 		
-		perros.add(new Perro("Motita","Dálmata", 2, 38.1F ));
-		perros.add(new Perro("Hans","Pastor Alemán", 6, 41.5F ));
+		perros.add(new Perro("Motita","Dï¿½lmata", 2, 38.1F ));
+		perros.add(new Perro("Hans","Pastor Alemï¿½n", 6, 41.5F ));
 		perros.add(new Perro("Quesito","Chihuahua", 4, 1.3F ));
 		return perros;
 	}

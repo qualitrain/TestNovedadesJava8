@@ -76,7 +76,7 @@ public class Test09PerrosReduce {
 	}
 	private static void testReduce03() {
 		System.out.println("===================================================================");
-		System.out.println("                         Ejemplo reducci�n");
+		System.out.println("                         Ejemplo reduccion");
 		System.out.println("===================================================================");
 		List<Perro> perros = getListaPerros();
 		
@@ -89,7 +89,7 @@ public class Test09PerrosReduce {
 				             .distinct()
 				             .reduce("", (acum, nextRaza) -> acum + nextRaza + ", " );
 		System.out.println("Razas distintas: " + razas);
-		
+				
 	}
 	private static List<Perro> getListaPerros() {
 		List<Perro> perros = new ArrayList<Perro>();
@@ -100,14 +100,14 @@ public class Test09PerrosReduce {
 		
 		perros.add(new Perro("Tyson","Boxer", 11, 28.3F ));
 		perros.add(new Perro("Midas","Boxer", 10, 26.0F ));
-		perros.add(new Perro("Campe�n","Boxer", 10, 25.5F ));
+		perros.add(new Perro("Campeon","Boxer", 10, 25.5F ));
 		
-		perros.add(new Perro("Zapato","Pastor Ingl�s", 12, 50.7F ));
-		perros.add(new Perro("Killer","Pastor Ingl�s", 6, 45.5F ));
-		perros.add(new Perro("Morris","Pastor Ingl�s", 3, 48.2F ));
+		perros.add(new Perro("Zapato","Pastor Ingles", 12, 50.7F ));
+		perros.add(new Perro("Killer","Pastor Ingles", 6, 45.5F ));
+		perros.add(new Perro("Morris","Pastor Ingles", 3, 48.2F ));
 		
-		perros.add(new Perro("Motita","D�lmata", 2, 38.1F ));
-		perros.add(new Perro("Hans","Pastor Alem�n", 6, 41.5F ));
+		perros.add(new Perro("Motita","Dalmata", 2, 38.1F ));
+		perros.add(new Perro("Hans","Pastor Aleman", 6, 41.5F ));
 		perros.add(new Perro("Quesito","Chihuahua", 4, 1.3F ));
 		return perros;
 	}
